@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    background-color: #d1d1d1;
+}
+.container {
+    height: 45vh;
+    width: 25vw;
+    background-color: #404258;
+    margin: 100px auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container form div input{
+    width: 55px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.container .display {
+    display: flex;
+    justify-content: flex-end;
+}
+.container .display input {
+text-align: right;
+flex: 1;
+font-size: 35px;
+box-shadow: none;
+}
+.container form div input:hover{color:#ffffff9d;}
+
+.container div:nth-child(6) input:last-child{
+    width: 125px;
+}
+
+/* //////////CALCULATOR TEXT_COLOR DESIGN CODE \\\\\\\\\\\\\\\\\\\\\\ */
+p {
+    text-align: center;
+	margin: 50px 0;
+    color: skyblue;
+	letter-spacing: 0.0015em;
+	font-size: 9em;
+	text-shadow: 0 1px #8da1ff, -1px 0 #c0cbff, -1px 2px #8da1ff, -2px 1px #c0cbff,
+		-2px 3px #8da1ff, -3px 2px #c0cbff, -3px 4px #8da1ff, -4px 3px #c0cbff,
+		-4px 5px #8da1ff, -5px 4px #c0cbff, -5px 6px #8da1ff, -6px 5px #c0cbff,
+		-6px 7px #8da1ff, -7px 6px #c0cbff, -7px 8px #8da1ff, -8px 7px #c0cbff;
+	transition: .5s;
+}
+p:hover{
+    color: rgb(95, 179, 212);
+    transform: rotate(5deg);
+    box-shadow: 10px 10px 100px 1px  #fff;
+}
