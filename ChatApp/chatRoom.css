@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.chatRoom {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #eaf9f9e9 0.1%, rgba(239, 249, 251, 0.845) 90.1% );
+    height: auto;
+    padding: 2rem;
+    width: 70%;
+    margin: 4rem auto 0rem auto;
+    z-index: 990;
+    border-radius: 10px;
+    color: #478bd6;
+    font-family: 'Aclonica', sans-serif;
+    box-shadow: -10px -10px 10px 1px #00000044;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.chatRoom h1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.chatRoom img {
+    height: 10%;
+    width: 10%;
+}
+
+
+
+/* Messages CSS */
+
+
+
+
+.Messages {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #fff5f5d5 0.1%, rgba(239, 249, 251, 0.932) 90.1% );
+    /* height: auto; */
+    height: 40vh;
+    padding: 2rem;
+    width: 65%;
+    margin: auto;
+    border-radius: 10px;
+    color: #478bd6;
+    font-family: 'Aclonica', sans-serif;
+    box-shadow: 10px 10px 10px 1px #00000038;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.userName {
+    position: absolute;
+    padding: 1rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.userName .Msg span:first-child {
+    color: #1e1e1ec2;
+}
+.userName .Msg span:nth-child(2) {
+    color: #478bd6;
+    margin: 0 0.5rem;
+}
+.userName .Msg span:last-child {
+    color: #1e1e1ec2;
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+.InputMessage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.InputMessage input {
+    padding: 10px;
+    font-size: 20px;
+    color: #478bd6;
+    border: 1px solid #478bd6;
+    background-color: #fff;
+    outline: none;
+    width: 52%;
+    display: inline-block;
+}
+.InputMessage i {
+    position: absolute;
+    right: 26%;
+    font-size: 25px;
+    top: 25%;
+    /* transform: translateY(-80%); */
+    margin: 0 5px 0 5px;
+}
+.InputMessage i:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 728px) {
+    .chatRoom h1 {
+        font-size: 19px;
+    }
+    .InputMessage input::placeholder {
+        font-size: 14px;
+    }
+    .Messages {
+    height: 60vh;
+    }
+
+}
