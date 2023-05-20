@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Griffy', cursive;
+}
+
+body {
+    background: linear-gradient(100deg, #007AB7, #5C4BBF);
+}
+
+.box {
+    background: linear-gradient(100deg, #9BC6F2, #BEF9F9);
+    height: auto;
+    width: 400px;
+    margin: 10rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+.box h1 {
+    font-size: 3rem;
+    color: #000000cc;
+}
+.box input {
+    height: 30px;
+    display: inline-block;
+    width: 10%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #007AB7;
+    font-family: monospace;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(-3deg);
+    outline: none;
+}
+.box button {
+    height: 30px;
+    width: 85%;
+    color: #fff;
+    background-color: #007AB7;
+    border: none;
+    font-size: 1.5rem;
+    /* border-radius: 10px; */
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+}
+.box button:hover {
+    background-color: #0b97de;
+}
+.box .chances {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.box::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    transition: .3s ease-in;
+}
+.box::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #00b3ff;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: .3s ease-in;
+}
+.box:hover::after,
+.box:hover::before {
+    width: 50%;
+}
+
+.box .game-hint {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
