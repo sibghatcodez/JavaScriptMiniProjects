@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win The Reaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="imp">
+            <h1 onselectstart="return false">First one to type <b id="reaction"></b></h1>
+            <h1 id="prize" onselectstart="return false">Gets $100 USD</h1>
+        </div>
+
+        <div class="start" onselectstart="return false">
+            <input type="text" id="userTXT" placeholder="Type here...">
+
+            <div class="btns">
+                <button id="submit"><span>Enter</span></button>
+                <button id="time"></button>
+            </div>
+        </div>
+
+        <div class="startTest">
+            <h1>First one to type Game</h1>
+            <button id="startTest">Start Test</button>
+        </div>
+    </div>
+
+    <div class="resultCard">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>TestNo#</th>
+                    <th>Time Taken</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
