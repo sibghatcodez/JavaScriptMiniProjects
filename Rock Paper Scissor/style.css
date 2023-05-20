@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body{
+    background: linear-gradient(100deg, #D9F7A3, #77F4B6);
+}
+.myform {
+    height: 80vh;
+    background: linear-gradient(100deg, #0E7DA8, #3394A5);
+    /* width: 98vw; */
+    /* width: auto; */
+}
+.myform {
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    height: 40vh;
+    width: 70vw;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10% 20% 50% 50%;
+    box-shadow: 2px 2px 2px 1px #2d2d2d,
+                -2px -2px 2px 1px #3394A5;
+}
+.myform h1 {
+    color: #24ccff;
+    text-shadow: 2px 2px 2px #000000;
+}
+.myform input[type=number] {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-family: monospace;
+    margin: 10px;
+    outline: none;
+}
+.myform p {
+    font-size: 1.5rem;
+    color: white;
+}
+.myform button {
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    background: linear-gradient(100deg, #D9F7A3, #77F4B6);
+    border: none;
+    border-radius: 45% 98% 43%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.myform button:hover {
+    background: linear-gradient(100deg, #bbe76a, #77F4B6);
+    box-shadow: 2px 2px 12px 1px black;
+}
+.game-start {
+    max-height: 100vh;
+    min-width: 100vw;
+    display: none;
+}
+.game-start h1 {
+    margin: 1rem auto;
+    display: block;
+    color: #000;
+    text-align: center;
+}
+.game-start h2 {
+    /* margin: 1rem auto; */
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    background: linear-gradient(100deg, #f00000, #ffa6a6, #f00000);
+    text-align: center;
+    font-size: 2.5rem;
+}
+.game-start h3 {
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    background: linear-gradient(100deg, green, rgb(62, 227, 62), green);
+    text-align: center;
+    font-size: 2rem;
+}
+.game-start p {
+    margin: 3rem auto;
+    display: block;
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+}
+.baba {
+    margin: 5rem auto;
+    background: linear-gradient(100deg, #0B99C5, #699DE2, #0B99C5);
+    padding: 5rem;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 830px;
+    border-radius: 10% 20%;
+
+}
+#sq-1 img {
+    max-height: 200px;
+    min-width: 200px;
+    transition: .5s linear;
+    border-radius: 10% 50%;
+}
+#sq-2 img {
+    max-height: 200px;
+    min-width: 200px;
+    transition: .5s linear;
+    border-radius: 50% 10%;
+}
+#sq-3 img {
+    max-height: 200px;
+    min-width: 200px;
+    transition: .5s linear;
+    border-radius: 10% 50%;
+}
+@media (max-width: 768px) {
+    .myform {padding: 0.5rem; border-radius: 10px;}
+    .myform h1 {font-size: 1rem;}
+    .myform p {font-size: 0.8rem;}
+    .myform input {height: 20px; max-width: 150px;}
+    .baba {flex-direction: column; padding: 1.5rem; margin: 1rem;}
+    #sq-1 img, #sq-2 img, #sq-3 img{max-height: 100px; min-width: 100px;}
+    .game-start h1 {font-size: 1.7rem; margin: 0.5rem;}
+    .game-start h2 {font-size: 1.4rem;}
+    .game-start h3 {font-size: 1.4rem;}
+    .game-start p {font-size: 1.2rem; margin: 0.5rem;}
+}

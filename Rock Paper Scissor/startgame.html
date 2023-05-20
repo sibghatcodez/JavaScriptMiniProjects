@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu | Choose Rounds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="myform">
+        <h1>Rock Paper Scissor Game</h1>
+            <input type="number" placeholder="Enter rounds you want to play" id="userInput">
+            <p>Description: Round number should be above 4 and should be an even number.</p>
+            <button id="startBtn">Start</button>
+            <p id="error-message"></p>
+    </div>
+    <div class="game-start">
+        <h1 id="roundDisplay"></h1>
+        <p id="roundsToWin"></p>
+        <div class="baba">
+            <button class="squares" id="sq-1" value="0"><img src="img/paper.png"></button>
+            <button class="squares" id="sq-2" value="1"><img src="img/rock.png"></button>
+            <button class="squares" id="sq-3" value="2"><img src="img/scissor.png"></button>
+        </div>
+         <h2 id="result"></h2>
+         <h3 id="roundsWon"></h3>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
