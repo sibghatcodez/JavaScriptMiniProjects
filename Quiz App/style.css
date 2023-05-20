@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+    
+    @keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    
+    50% {
+    background-position: 100% 50%;
+    }
+    
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: azure;
+    margin: 10rem auto;
+    height: 20rem;
+    width: 70%;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid transparent;
+    animation: gradient2 15s ease infinite;
+}
+.container h1 {
+    animation: gradient2 15s ease infinite;
+}
+
+@keyframes gradient2 {
+0% {
+color: #ee7752;
+border-color: #ee7752;
+}
+
+50% {
+color: #e73c7e;
+border-color: #e73c7e;
+}
+
+100% {
+color: #23a6d5;
+border-color: #23a6d5;
+}
+}
+.options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+}
+
+.options .opt {
+    display: inline-block;
+    width: 45%;
+    border: 2px solid #23a6d5;
+    background-color: transparent;
+    color: #23a6d5;
+    padding: 10px;
+    text-align: center;
+}
+.options span:hover {
+    color: #000000;
+    text-shadow: 10px 5px 10px #ffffff;
+}
+.opt:nth-child(1),
+.opt:nth-child(3) {
+    border-radius: 10% 20% 10% 10%;
+}
+.opt:nth-child(2),
+.opt:nth-child(4) {
+    border-radius: 10% 10% 20% 10%;
+}
+
+button {
+    background-color: #e73c7e;
+    color: white;
+    font-family: cursive;
+    padding: 10px 25px;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    transition: .2s;
+}
+button:hover {
+    background-color: #91073cfd;
+}
+
+.options .selected {
+    background-color: #ee7752;
+    color: #ffffff;
+    text-shadow: 10px 5px 10px black;
+    border-color: #23d5ab;
+}
+.options .right {
+    background-color: #23d5ab;
+    color: #fafafa;
+    text-shadow: 10px 5px 10px black;
+    border-color: #23d5ab;
+}
+.options .wrong {
+    background-color: #f31269;
+    text-shadow: 10px 5px 10px black;
+    color: white;
+    border-color: #f31269;
+}
+
+@media (max-width: 728px) {
+    .container h1 {
+        font-size: 20px;
+    }
+}
